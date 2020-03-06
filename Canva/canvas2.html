@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        canvas{
+            border: 1px royalblue;
+            background-color: slateblue;
+
+        }
+    </style>
+</head>
+<body>
+    <canvas width="300" height="300" id="quadro"></canvas>
+    <script>
+        var quadro=document.getElementById("quadro")
+        // verficando se gaha sorte do verificador
+        if(quadro.getContext) {
+            var  ctx= quadro.getContext("2d")
+            ctx.fillStyle="rgba(0,149,197,0.1)"
+            ctx.fillRect(30,30,200,100)
+        }
+    </script>
+</body>
+</html>
